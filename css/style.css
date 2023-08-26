@@ -403,7 +403,7 @@ ul.email li a {
 
 .text-bg {
      text-align: left;
-     padding-left: 100px;
+     padding-left: 190px;
 }
 
 .text-bg h1 {
@@ -450,45 +450,6 @@ ul.email li a {
      padding: 0;
 }
 
-#banner1 .carousel-indicators {
-     display: none;
-}
-
-#banner1 .carousel-control-prev {
-     left: 0;
-}
-
-#banner1 .carousel-control-next {
-     right: inherit;
-     left: 5%;
-}
-
-#banner1 a.carousel-control-next,
-#banner1 a.carousel-control-prev {
-     opacity: 1;
-     top: 100%;
-}
-
-#banner1 .carousel-control-next i,
-#banner1 .carousel-control-prev i {
-     width: 50px;
-     height: 50px;
-     border-radius: 30px;
-     background: #1a1824;
-     opacity: 1;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     color: #fff;
-}
-
-#banner1 .carousel-control-next i:focus,
-#banner1 .carousel-control-next i:hover,
-#banner1 .carousel-control-prev i:focus,
-#banner1 .carousel-control-prev i:hover {
-     background: #eb2d52;
-     color: #fff;
-}
 
 .text-bg a {
      font-size: 17px;
@@ -664,7 +625,37 @@ ul.email li a {
 
 
 /** end about section **/
+/** caroussel **/
+.carousel {
+     position: relative;
+     overflow: hidden;
+ }
 
+ .carousel-inner {
+     display: flex;
+     transition: transform 0.6s ease-in-out;
+ }
+
+ .carousel-item {
+     flex: 0 0 100%;
+ }
+
+ .carousel-control-prev,
+ .carousel-control-next {
+     position: absolute;
+     bottom: 20px;
+     font-size: 24px;
+     cursor: pointer;
+ }
+
+ .carousel-control-prev {
+     left: 20px;
+ }
+
+ .carousel-control-next {
+     right: 20px;
+ }
+/** end caroussel **/ 
 
 /** customer section **/
 

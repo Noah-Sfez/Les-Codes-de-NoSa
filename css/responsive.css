@@ -191,6 +191,13 @@
     .carousel-control-next {
         left: 17% !important;
     }
+    .carousel-control-prev,
+    .carousel-control-next {
+     position: absolute;
+     bottom: 1150px;
+     font-size: 24px;
+     cursor: pointer;
+    }
     .margin_boot {
         margin-bottom: 20px;
     }
