@@ -251,9 +251,9 @@
 
     .navigation.navbar-collapse {
         /* Style de départ */
-        height: 0;
-        overflow: hidden;
-        transition: height 0.3s ease-in-out;
+        max-height: 0;
+        opacity: 0;
+        transition: max-height 0.3s ease-in-out;
         background: transparent;
         padding: 0;
         margin-top: 0;
@@ -264,7 +264,7 @@
     
     .navigation.navbar-collapse.show {
         /* Style d'arrivée */
-        height: 100px;
+        max-height: 300px; /* Ajuste cette valeur en fonction de la hauteur souhaitée */
         background: #000;
         padding: 20px;
         margin-top: 17px;
